@@ -4,27 +4,27 @@
   "description": "Fill in all file type inputs in a page",
   "manifest_version": 2,
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["src/scripts/background.js"]
   },
   "web_accessible_resources": [
-    "libs/jspdf.js"
+    "src/scripts/libs/jspdf.js"
   ],
   "permissions": [
     "activeTab"
   ],
   "content_scripts": [
     {
-      "js": ["libs/jspdf.js"],
+      "js": ["src/scripts/libs/jspdf.js"],
       "matches": ["*://*/*"]
     }
   ],
   "browser_action": {
-    "default_icon": "images/icon.png"
+    "default_icon": "src/images/icon.png"
   },
   "icons": {
-    "16": "images/icons/16.png",
-    "32": "images/icons/32.png",
-    "48": "images/icons/48.png",
-    "128": "images/icons/128.png"
+    "16": "src/images/icons/16.png",
+    "32": "src/images/icons/32.png",
+    "48": "src/images/icons/48.png",
+    "128": "src/images/icons/128.png"
   }
 }
