@@ -1,5 +1,5 @@
 function fileFilling() {
-  var fileInputs, inputClone, file, attrs;
+  var fileInputs, inputClone, file, attributes;
 
   fileInputs = document.querySelectorAll('input[type=file]');
   attributes = ['id', 'name', 'type'];
