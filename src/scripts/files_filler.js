@@ -20,7 +20,7 @@ function fileFilling() {
 function isPhotoInput(input) {
   var value = 0;
 
-  ['photo', 'image', 'picture'].forEach(function(word) {
+  ['photo', 'image', 'picture', 'logo', 'icon'].forEach(function(word) {
     value = value + input.name.includes(word);
   });
 
